@@ -25,14 +25,9 @@ public class CadastroLivros {
         livro.valor = 19.90;
 
         // mostrar detalhes do livro e autor
-        livro.mostrarDetalhes();
+        livro.mostrarDetalhesSimples();
 
-        // atualizar nome e email do autor
-        livro.autor.nome = "Pedro";
-        livro.autor.email = "teste@teste.com.br";
-
-        // mostrar novamente
-        livro.mostrarDetalhes();
+        livro.mostrarDetalhesCompleto();
 
     }
 }

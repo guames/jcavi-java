@@ -8,17 +8,22 @@ public class Livro {
     String isbn;
     Autor autor;
 
-    void mostrarDetalhes(){
+    void mostrarDetalhesCompleto(){
         System.out.println("=== LIVRO ===");
         System.out.println("Nome: "+ nome);
         System.out.println("Descricao: "+ descricao);
         System.out.println("Valor: "+ valor);
         System.out.println("Isbn: "+ isbn);
-        System.out.println("=== AUTOR ===");
-        System.out.println("Nome: " + autor.nome);
-        System.out.println("Cpf: " + autor.cpf);
-        System.out.println("Email: " + autor.email);
-        System.out.println("=== AUTOR ===");
+        System.out.println("=== LIVRO ===");
+        autor.mostrarDetalhes();
+    }
+
+    void mostrarDetalhesSimples(){
+        System.out.println("=== LIVRO ===");
+        System.out.println("Nome completo: "+ nome);
+        System.out.println("Descricao: "+ descricao);
+        System.out.println("Valor: "+ valor);
+        System.out.println("Isbn: "+ isbn);
         System.out.println("=== LIVRO ===");
     }
 }
