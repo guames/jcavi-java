@@ -25,7 +25,7 @@ public class Livro {
                  double valor,
                  Autor autor,
                  double porcentagemDesconto){
-        this( nome, descricao, valor, null, autor, porcentagemDesconto);
+        this(nome, descricao, valor, null, autor, porcentagemDesconto);
         System.out.println("construtor sem isbn!");
     }
 
