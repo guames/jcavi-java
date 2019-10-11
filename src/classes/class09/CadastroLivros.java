@@ -12,13 +12,13 @@ public class CadastroLivros {
      */
     public static void main(String[] args) throws Exception {
 
-        //Instanciando o autor
+        //Instanciando o autor com todos os campos necessarios
         Autor novoAutor = new Autor(
                 "Gustavo Ames",
                 "000.000.000-00",
                 "gustavo@jcavi.com.br");
 
-        //Instanciando Livro passando o parametro do autor e o nome do livro
+        //Instanciando Livro passando o parametro todos os campos necessarios
         Livro livro = new Livro(
                 "Livro de Java",
                 "Este livro é para os alunos estudarem!",
@@ -26,7 +26,7 @@ public class CadastroLivros {
                 novoAutor,
                 0.2);
 
-        // mostrar detalhes do livro e autor
+        //mostrar detalhes do livro e autor
         System.out.println(livro.toString());
     }
 }

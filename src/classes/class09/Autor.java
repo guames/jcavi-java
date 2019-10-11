@@ -10,7 +10,7 @@ public class Autor {
     private String email;
 
     /**
-     * Construtor do objeto autor com os campos default
+     * Construtor do objeto autor com os campos default.
      * @param nome
      * @param cpf
      * @param email
@@ -45,6 +45,10 @@ public class Autor {
         this.email = email;
     }
 
+    /**
+     * Mostrar os valores do autor.
+     * @return texto com os valores preenchidos.
+     */
     @Override
     public String toString() {
         return "Autor{" +

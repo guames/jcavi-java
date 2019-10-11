@@ -12,6 +12,14 @@ public class Livro {
     private Autor autor;
     private double porcentagemDesconto;
 
+    /**
+     * Construtor do livro sem ISBN.
+     * @param nome
+     * @param descricao
+     * @param valor
+     * @param autor
+     * @param porcentagemDesconto
+     */
     public Livro(String nome,
                  String descricao,
                  double valor,
@@ -21,6 +29,15 @@ public class Livro {
         System.out.println("construtor sem isbn!");
     }
 
+    /**
+     * Construtor do livro completo.
+     * @param nome
+     * @param descricao
+     * @param valor
+     * @param isbn
+     * @param autor
+     * @param porcentagemDesconto
+     */
     public Livro(String nome,
                  String descricao,
                  double valor,
@@ -102,6 +119,10 @@ public class Livro {
         return this.autor == null;
     }
 
+    /**
+     * Mostra os valores preenchidos do livro e do autor dentro do livro caso exista.
+     * @return
+     */
     @Override
     public String toString() {
         return "Livro{" +
