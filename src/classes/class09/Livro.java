@@ -17,6 +17,8 @@ public class Livro {
                  double valor,
                  Autor autor,
                  double porcentagemDesconto){
+        this( nome, descricao, valor, null, autor, porcentagemDesconto);
+        System.out.println("construtor sem isbn!");
     }
 
     public Livro(String nome,
@@ -42,6 +44,7 @@ public class Livro {
         this.isbn = isbn;
         this.porcentagemDesconto = porcentagemDesconto;
         aplicaDescontoDe();
+        System.out.println("construtor com isbn!");
     }
 
     public String getNome() {

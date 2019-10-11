@@ -23,7 +23,6 @@ public class CadastroLivros {
                 "Livro de Java",
                 "Este livro é para os alunos estudarem!",
                 19.90,
-                null,
                 novoAutor,
                 0.2);
 
