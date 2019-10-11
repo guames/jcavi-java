@@ -17,8 +17,8 @@ public class CadastroLivros {
 
         // preenchendo os atributos do autor
         novoAutor.nome = "Gustavo Ames";
-        novoAutor.cpf= "000.000.000-00";
-        novoAutor.email="gustavo@jcavi.com.br";
+        novoAutor.cpf = "000.000.000-00";
+        novoAutor.email ="gustavo@jcavi.com.br";
 
         //Instanciando Livro passando o parametro do autor e o nome do livro
         Livro livro = new Livro(novoAutor,"Livro de Java");
