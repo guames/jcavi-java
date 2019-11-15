@@ -1,7 +1,7 @@
-package classes.class12;
+package classes.class13;
 
 
-public class LivroFisico extends Livro implements Promocional{
+public class LivroFisico extends Livro implements Promocional {
 
     public LivroFisico(String nome,
                        String descricao,
