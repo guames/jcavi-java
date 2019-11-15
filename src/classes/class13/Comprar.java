@@ -13,32 +13,34 @@ public class Comprar {
      */
     public static void main(String[] args) throws Exception {
 
-        //Instanciando o autor com todos os campos necessarios
-        Autor novoAutor = new Autor(
-                "Gustavo Ames",
-                "000.000.000-00",
-                "gustavo@jcavi.com.br");
+        try {
+            //Instanciando o autor com todos os campos necessarios
+            Autor novoAutor = null;
 
-        //Instanciando Livro Fisico o parametro todos os campos necessarios
-        MiniLivro miniLivro = new MiniLivro(
-                "Livro de Java",
-                "Este livro é para os alunos estudarem!",
-                19.90,
-                "111-111-111-111",
-                novoAutor,
-                0.2);
+            //Instanciando Livro Fisico o parametro todos os campos necessarios
+            MiniLivro miniLivro = new MiniLivro(
+                    "Livro de Java",
+                    "Este livro é para os alunos estudarem!",
+                    19.90,
+                    "111-111-111-111",
+                    novoAutor,
+                    0.2);
 
 
-        //mostrar detalhes do livro e autor
+            //mostrar detalhes do livro e autor
 
-        VideoGame videoGame = new VideoGame("PS$","Sony", 5000.00, "Video game ps4 bla bla bla...");
+            VideoGame videoGame = new VideoGame("PS$", "Sony", 5000.00, "Video game ps4 bla bla bla...");
 
-        CarrinhoCompras cc = new CarrinhoCompras();
 
-        cc.adicionaProduto(miniLivro);
-        cc.adicionaProduto(videoGame);
 
-        cc.listarProdutos();
+            CarrinhoCompras cc = new CarrinhoCompras();
 
+            cc.adicionaProduto(miniLivro);
+            cc.adicionaProduto(videoGame);
+
+            cc.listarProdutos();
+        }catch (AutorNuloException a){
+            a.lancaException();
+        }
     }
 }

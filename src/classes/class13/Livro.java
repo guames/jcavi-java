@@ -27,6 +27,8 @@ public abstract class Livro implements Produto {
                  String isbn,
                  Autor autor,
                  double porcentagemDesconto) {
+        if(autor == null)
+            throw new AutorNuloException("Autor esta nulo!");
         this.autor = autor;
         this.nome = nome;
         this.descricao = descricao;
