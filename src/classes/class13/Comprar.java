@@ -41,6 +41,7 @@ public class Comprar {
             cc.listarProdutos();
         }catch (AutorNuloException a){
             a.lancaException();
+            a.printStackTrace();
         }
     }
 }
